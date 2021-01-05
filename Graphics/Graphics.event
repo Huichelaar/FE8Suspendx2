@@ -1,0 +1,6 @@
+// BackupBox, display during SaveMenu when resuming
+// We don't compress; There's not a lot of room in VRAM left
+ALIGN 4
+BackupGfx:
+//#incext Png2Dmp "BackupBox.png"
+#incbin "BackupBox.dmp"

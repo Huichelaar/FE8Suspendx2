@@ -1,0 +1,37 @@
+PUSH
+
+  ORG 0xAA0C4                         // Choose which suspended save to load
+  callHack_r3(LoadSuspendedGame2)
+  
+  ORG 0xA8AA0                         // Put BackupCount into SaveMenu Procstate +0x41 (may be unused)
+  callHack_r3(InitBackupDisplayValue) // This is also where chaptertitles are loaded.
+  SHORT 0xE01D                        // So we can load in BackupBox after them.
+
+  ORG 0xAA864                         // Draw BackupCount
+  callHack_r0(DrawBackupValue)
+
+  ORG 0xA9564                         // Also listen to L button input
+  SHORT 0x1C28
+  SHORT 0x46C0
+  callHack_r2(ListenToL)
+  SHORT 0x1C02
+  SHORT 0x2100
+  SHORT 0xE066
+
+POP
+
+ALIGN 4
+LoadSuspendedGame2:
+#include "LoadSuspendedGame2.lyn.event"
+ALIGN 4
+Suspend2ASMC:
+#include "Suspend2ASMC.lyn.event"
+ALIGN 4
+InitBackupDisplayValue:
+#include "InitBackupDisplayValue.lyn.event"
+ALIGN 4
+DrawBackupValue:
+#include "DrawBackupValue.lyn.event"
+ALIGN 4
+ListenToL:
+#include "ListenToL.lyn.event"

@@ -1,0 +1,10 @@
+PUSH
+
+  ORG 0x59CF58              // Suspend Command Effect
+  POIN NewSuspendEffect+0x1
+
+POP
+
+ALIGN 4
+NewSuspendEffect:
+#include "NewSuspendEffect.lyn.event"

@@ -38,7 +38,7 @@ INSTALL
 
 WHATITDO?
   This is my attempt at replicating a sort of Mila's Turnwheel/Divine Pulse in FEGBA. It is admittedly 
-  more limited results.
+  more limited.
   
   You can create a backup suspend save at any time (except during a tutorial) during a chapter. After 
   pressing "Suspend" and declining the offer to return to the main menu, you'll be offered the option 

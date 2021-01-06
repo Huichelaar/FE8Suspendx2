@@ -11,6 +11,14 @@
 	ORG FreeSpace
 #endif
 
+// Uncomment this to put backup functionality in the "Suspend" button,
+// instead of having a separate button. Useful if your menu's too cluttered.
+/*
+#ifndef OverwriteSuspend
+  #define OverwriteSuspend
+#endif
+*/
+
 // Uncomment to turn "Guide" into chapter win button
 /*
 #ifndef Debug
@@ -29,7 +37,6 @@
   ALIGN 4
   UndoCount:
   WORD 0x3
-  
   
 	PUSH
   

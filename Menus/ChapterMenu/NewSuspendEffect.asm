@@ -10,7 +10,7 @@ ldrb  r0, [r1]
 cmp   r0, #0x2
 beq   Tutorial
 
-  ldr   r0, =NewSuspendEvent
+  ldr   r0, =SuspendEvent
   mov   r1, #0x1
   ldr   r4, =CallEventEngine
   bl    GOTO_R4

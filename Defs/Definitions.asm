@@ -33,6 +33,26 @@
 .type   CallEventEngine, function
 .set    CallEventEngine, 0x0800D07D
 
+.global GetStringFromIndex
+.type   GetStringFromIndex, function
+.set    GetStringFromIndex, 0x0800A241
+
+.global Text_SetColorId
+.type   Text_SetColorId, function
+.set    Text_SetColorId, 0x08003E61
+
+.global Text_AppendString
+.type   Text_AppendString, function
+.set    Text_AppendString, 0x08004005
+
+.global Text_Draw
+.type   Text_Draw, function
+.set    Text_Draw, 0x08003E71
+
+.global BG_GetMapBuffer
+.type   BG_GetMapBuffer, function
+.set    BG_GetMapBuffer, 0x08001C4D
+
 
 @ RAM locations
 .global ChapterData

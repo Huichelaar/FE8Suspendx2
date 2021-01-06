@@ -40,16 +40,16 @@ WHATITDO?
   This is my attempt at replicating a sort of Mila's Turnwheel/Divine Pulse in FEGBA. It is admittedly 
   more limited.
   
-  You can create a backup suspend save at any time (except during a tutorial) during a chapter. After 
-  pressing "Suspend" and declining the offer to return to the main menu, you'll be offered the option 
-  to create a backup save. If you choose "Yes" a backup of your current progress in the chapter will be 
-  made. If you already had a backup save, this one will be overwritten.
+  You can create a backup suspend save at any time (except during a tutorial) during a chapter. Press 
+  "Backup" in the chaptermenu and you'll be offered the option to create a backup save. If you don't 
+  have a backup save yet, the command will be glowing green. If you choose "Yes" a backup of your 
+  current progress in the chapter will be made. If you already had a backup save, it will be overwritten.
   
   To return to your backup save, go back to the main menu and press L instead of A when resuming the 
   battle. If a backup save is available, there'll be a counter (under "UNDO") displaying how many times 
   you're allowed to return to this backup. When this counter hits 0, you won't be able to return to 
-  your backup save. This counter can be reset by loading or saving a regular game save and subsequently 
-  making another backupsave.
+  your backup save. The "Backup" command will not appear anymore either. Reset the counter by loading 
+  or saving a regular game save and subsequently making another backupsave.
   
   Of course, regular suspend is still available. The game automatically saves after every action you 
   take. If you return to a backupsave this save will also overwrite the regular suspend save (resuming 
@@ -67,8 +67,14 @@ CUSTOMIZATION
   There's one variable, "UndoCount." Change the value this holds in "Suspendx2.event" to whatever many 
   times you wish to allow the player to return to a backup.
   
+  By default, there will be a backup command in the chaptermenu, right below suspend. If this makes 
+  the menu too cluttered, uncomment the #define OverwriteSuspend in "Suspendx2.event." This will 
+  remove the backup command from the chaptermenu. Instead, you can create a backup save by pressing 
+  suspend and declining the offer to return to the main menu.
+  
+  
 CONCLUDING
-  So, this only took me four days to implement. I'm pleased as punch with that speed, because most ASM 
+  So, this only took me five days to implement. I'm pleased as punch with that speed, because most ASM 
   projects I undertake take me three weeks to a month. ExpandedModularSave has been a lifesaver in this 
   regard; Without it, this would've taken way longer.
   
@@ -91,5 +97,8 @@ CREDITS
      feedback.
   - Text Processor made by circleseverywhere, StanH_.
   - ExModularSave made by StanH_, Colorz.
+  - FEBuilder by 7743. I used this for documentation. https://github.com/FEBuilderGBA/FEBuilderGBA
+  - StanDOC by StanH_.
+  - Teq Doq by Tequila.
   - Assuming I didn't miss anything, the rest should go to me, Huichelaar.
   Tell me if I've missed anyone, I'll make sure to add them to the credits.

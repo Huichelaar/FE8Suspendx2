@@ -5,8 +5,11 @@
 #define TEXT_DEFINITIONS_TEXTBUILDFILE_EVENT
 
 #define LoremIpsum $D4C
-#define SuspendQuestion $D4D
-#define BattleSaveQuestion $D4E
-#define SuspendReply $D4F
+#define BackupCommandName $D4D
+#define BackupCommandHelp $D4E
+#define SuspendQuestion $D4F
+#define BackupQuestion $D50
+#define BackupQuestion2 $D51
+#define BackupReply $D52
 
 #endif // TEXT_DEFINITIONS_TEXTBUILDFILE_EVENT

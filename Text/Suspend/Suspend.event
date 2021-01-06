@@ -1,11 +1,22 @@
+## BackupCommandName
+ Backup[X]
+
+## BackupCommandHelp
+Make a backup save.[NL]
+Return to this save via main menu.[X]
+
 ## SuspendQuestion
 [OpenLeft][LoadFace][0x64][0x1][OpenLeft]Do you want to return to main menu?[NL]
 [Yes][X]
 
-## BattleSaveQuestion
+## BackupQuestion
 [OpenLeft]Do you want to make a backup save?[NL]
 [Yes][X]
 
-## SuspendReply
+## BackupQuestion2
+[OpenLeft][LoadFace][0x64][0x1][OpenLeft]Do you want to make a backup save?[NL]
+[Yes][X]
+
+## BackupReply
 [OpenLeft]Press L instead of A when resuming[NL]
 to return to this backup.[A][X]

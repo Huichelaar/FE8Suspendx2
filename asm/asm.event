@@ -21,11 +21,11 @@ PUSH
 POP
 
 ALIGN 4
+BackupASMC:
+#include "BackupASMC.lyn.event"
+ALIGN 4
 LoadSuspendedGame2:
 #include "LoadSuspendedGame2.lyn.event"
-ALIGN 4
-Suspend2ASMC:
-#include "Suspend2ASMC.lyn.event"
 ALIGN 4
 InitBackupDisplayValue:
 #include "InitBackupDisplayValue.lyn.event"

@@ -14,16 +14,28 @@ __TEXTPROCESSD4C:
 setText($D4C, __TEXTPROCESSD4C)
 
 __TEXTPROCESSD4D:
-#incbin ".TextEntries\TextBuildfileSuspendQuestion.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileBackupCommandName.fetxt.dmp"
 setText($D4D, __TEXTPROCESSD4D)
 
 __TEXTPROCESSD4E:
-#incbin ".TextEntries\TextBuildfileBattleSaveQuestion.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileBackupCommandHelp.fetxt.dmp"
 setText($D4E, __TEXTPROCESSD4E)
 
 __TEXTPROCESSD4F:
-#incbin ".TextEntries\TextBuildfileSuspendReply.fetxt.dmp"
+#incbin ".TextEntries\TextBuildfileSuspendQuestion.fetxt.dmp"
 setText($D4F, __TEXTPROCESSD4F)
+
+__TEXTPROCESSD50:
+#incbin ".TextEntries\TextBuildfileBackupQuestion.fetxt.dmp"
+setText($D50, __TEXTPROCESSD50)
+
+__TEXTPROCESSD51:
+#incbin ".TextEntries\TextBuildfileBackupQuestion2.fetxt.dmp"
+setText($D51, __TEXTPROCESSD51)
+
+__TEXTPROCESSD52:
+#incbin ".TextEntries\TextBuildfileBackupReply.fetxt.dmp"
+setText($D52, __TEXTPROCESSD52)
 
 }
 
